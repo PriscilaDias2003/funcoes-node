@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculadora Multifuncional</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <form action="/calculate" method="POST">
+            <h1>Calculadora de Regra de Três, Maior e Menor Valor</h1>
+            <input type="number" name="valueA" placeholder="Valor A (Base para Regra de Três)" required>
+            <input type="number" name="valueB" placeholder="Valor B (Total para Regra de Três)" required>
+            <input type="number" name="valueC" placeholder="Valor C (Novo valor base para Regra de Três ou comparação)" required>
+            <input type="number" name="valueD" placeholder="Valor D" required>
+            <input type="number" name="valueE" placeholder="Valor E" required>
+            <select id="operationType" name="operationType">
+                <option value="ruleOfThree">Regra de Três</option>
+                <option value="highestValue">Maior Valor</option>
+                <option value="lowestValue">Menor Valor</option>
+            </select>
+            <button type="submit">Calcular</button>
+        </form>
+    </body>
+</html>
